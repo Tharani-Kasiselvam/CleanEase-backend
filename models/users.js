@@ -10,7 +10,9 @@ const usersSchema = new mongoose.Schema(
             type : String,
             default : "I"
         },
-        short_url : String
+        short_url : String,
+        address : String,
+        mobilenum : String
     },
     {
         collection : 'Users',

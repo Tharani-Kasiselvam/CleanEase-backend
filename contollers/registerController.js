@@ -12,7 +12,7 @@ const registerController = {
     register: async (req, res) => {
         try {
             // get the user input from the request body
-            const { firstname, lastname, email, password } = req.body;
+            const { firstname, lastname, email, password, address, mobilenum } = req.body;
 
             // check if the username already exists in the database
             const user_data = await Users.findOne({ email });
@@ -30,7 +30,9 @@ const registerController = {
                 firstname,
                 lastname,
                 email,
-                password: passwordHash
+                password: passwordHash,
+                address,
+                mobilenum
             });
 
             // save the user in the database
