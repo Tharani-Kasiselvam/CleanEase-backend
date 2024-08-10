@@ -7,6 +7,10 @@
 
 *Login User* : https://clean-ease-backend.onrender.com/login   
 
+*Create Password Reset Token Link* : https://clean-ease-backend.onrender.com/forgotpwd   
+
+*Password Reset* : https://clean-ease-backend.onrender.com/password-reset/:userId/:tokenStr    
+
 *Pusblish Cleaning Services List* : https://clean-ease-backend.onrender.com/services   
 
 *Account Activation* : http://localhost:5001/activateAccount/$userId/$tokenstr   

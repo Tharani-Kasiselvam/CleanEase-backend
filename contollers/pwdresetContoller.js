@@ -1,4 +1,5 @@
 const users = require('../models/users')
+const pwdtokengen = require('../models/pwdtokengen')
 const crypto = require('crypto')
 const Joi = require('joi')
 require('dotenv').config()
