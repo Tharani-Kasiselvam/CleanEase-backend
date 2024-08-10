@@ -15,6 +15,9 @@ const loginController = {
 
         const passwordHash = user.password
 
+        console.log("account status:",user.is_active)
+
+        if(user.is_active=='A'){
         // if the username exists, compare the password
         const isPasswordCorrect = await bcrypt.compare(password, passwordHash)
         console.log("pwd bcrypt:",isPasswordCorrect)
@@ -39,6 +42,10 @@ const loginController = {
 
         // return a success message and the token
         res.status(200).send({ message: 'Login successful', token });
+    }
+    else{
+        res.status(500).send({ error: 'Kindly Activate your Account' });
+    }
     } catch (error) {
         res.status(500).send({ error: "Login Failed, verify Credentials" });
     }
