@@ -1,4 +1,4 @@
-## Password Reset Flow
+## Clean Ease Portal
 *created using node js*
 
 *Postman API Documentation* : https://documenter.getpostman.com/view/36133215/2sA3s3Gr81      
